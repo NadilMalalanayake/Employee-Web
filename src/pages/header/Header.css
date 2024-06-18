@@ -9,7 +9,7 @@
 .navbar .nav-link {
   color: white;
   text-decoration: none;
-  margin: 12px;
+  margin: 10px;
 }
 
 @media (max-width: 576px) {
