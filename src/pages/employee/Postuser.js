@@ -26,8 +26,9 @@ const Postuser = () => {
     e.preventDefault();  //disable auto reloading page
 
     console.log(formData)
+
     try {
-        const response= await fetch("http://localhost:8080/api/employee",{
+        const response= await fetch("http://localhost:8080/api/employee",{    //employee created API (this one to comnect with backeend when after postman success)
             method:"POST",
             headers : {"Content-Type": "application/json"},
             body:JSON.stringify(formData)  //access the form data
@@ -42,11 +43,11 @@ const Postuser = () => {
     }   
   }
 
-  return (
+  return (  //when submit button click form submit in Form{handleSubmit}
     <>
       <div className="center-form">
         <h1>Post new Employee </h1>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit}>  
           <Form.Group controlId="forBasicName">
             <FormControl
               type="text"

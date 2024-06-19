@@ -4,7 +4,7 @@ import Header from './pages/header/Header';
 import Dashboard from './pages/dashboard/Dashboard';
 import Nomatch from './pages/nomatch/nomatch';
 import Postuser from './pages/employee/Postuser';
-
+import UpdateUser from './pages/employee/UpdateUser';
 
 
 
@@ -17,6 +17,7 @@ function App() {
           <Route path="/"  element={<Dashboard/>} />
           <Route path="/employee"  element={<Postuser/>} />
           <Route path="*"  element={<Nomatch/>} />
+          <Route path="/employee/:id" element={<UpdateUser/>}/>
       </Routes>
 
     </>
